@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	
+	
+
+}
+
+/*  Sección Home(index)  */
+
+#containerGrid{
+	display: grid;
+	grid-template-rows: 100px 500px 900px 100px;
+	min-height: 100vh;
+}
+
+
+#headerFlex{
+	background-color: black;
+	color: #fff;
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	font-size: 20px;
+	font-weight: 700;
+    padding: 3rem 1.5rem;
+
+}
+
+.categorias{
+    list-style-type: none;
+}
+
+.categorias li{
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+
+#bannerFlex{
+	display: flex;
+	align-items: center;
+    margin-top: 5rem;
+    
+
+}
+
+.imagenBanner{
+    width: 60%;	
+
+}		
+
+
+.title{  
+    font-weight: 700;
+    font-size:2.7rem;
+    line-height: 45px;
+    margin-left: 6rem;	
+    width: 479px;
+}
+
+
+.btn{
+    background-color: #000;
+    padding: 0.6rem 2.5rem;
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    margin-top: 1.2rem;
+    margin-left: 6rem;
+    border-radius: 20px;
+}
+
+
+.text span{
+    color: #7D33D3;
+}
+
+
+.cardFlex{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1300px;
+	justify-self:center;
+	align-self: center;
+	padding: 20px 0;
+	margin-top: 3rem;
+	margin-left: 4rem;
+}
+
+.item{
+	width: 33.33333%;
+	padding: 20px;
+	box-sizing: border-box;		
+}
+
+.imagenCard{
+	width: 80%;
+}
+
+.cardFlex div{
+	font-weight: 700;
+	font-size: 2rem;
+}
+.cardFlex p{
+	font-weight: 100;
+	font-size: 1rem;
+	line-height: 1.5;
+	width: 350px;
+}
+
+
+.cardFlex a{
+	font-size: 1.2rem;
+	margin-top: 30px;		
+	color: #000;
+}
+
+
+#footer{
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	font-size: 1.5rem;
+	background-color: black;
+	color: white;
+}
+
+@media all and (max-width: 768px){
+	
+	#containerGrid{
+		display: grid;
+		grid-template-rows: 90px 100px 1600px 90px;
+		min-height: 100vh;
+	}
+
+	#headerFlex{
+		font-size: 16px;
+	    padding: 2rem 1rem;
+
+	}
+
+	.categorias li{
+    	margin-left: 1rem;
+	}
+
+	
+	.title{  
+	    font-size: 18px;
+	    line-height: 20px;
+	    margin-left: 2rem;
+	    margin-top: 1rem;	
+	    width: 200px;
+	}
+
+
+	.btn{
+	    padding: 0.4rem 2rem;
+	    font-size: 10px;
+	    margin-top: 1rem;
+	    margin-left: 2rem;		
+  
+	}
+	
+	.imagenBanner{
+    	width: 50%;	
+
+	}	
+	.cardFlex{
+		margin-top: 3rem;
+		
+	}		
+	.cardFlex .item{
+		width: 100%;
+		
+	}
+	
+	.cardFlex div{
+		font-size: 18px;
+	}
+	
+	.cardFlex p{
+		font-size: 12px;
+	}
+
+	.cardFlex a{
+		font-size: 16px;
+		margin-top: 30px;		
+		color: #000;
+
+	}
+	.imagenCard{
+		width: 80%;
+	}
+	
+	#footer div{	
+		font-size: 14px;
+	}
+
+}
+
+/* Sección Artistas  */
+
+#containerGridArtistas{
+	display: grid;
+	grid-template-rows: 100px 400px 700px 500px 100px;
+	min-height: 100vh;
+}
+
+.imagenTyler{
+	width: 50%;
+	margin-left: 6rem;
+	margin-top: 6rem;
+}
+
+.title2{  
+    font-weight: 700;
+    font-size:2.7rem;
+    line-height: 45px;
+    margin-left: 6rem;	
+    width: 430px;
+}
+
+.content{
+	font-weight: 100;
+    font-size: 22px;
+	width: 486px;
+	color: #000;
+	margin-left: 6rem;
+	margin-top: 1rem;
+}
+
+.popularesFlex{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1300px;
+	justify-self:center;
+	padding: 20px 0;
+	margin-top: 14rem;
+	margin-left: 4rem;		
+	
+}
+
+.itemArtista{
+	width: 33.33333%;
+	box-sizing: border-box;		
+}
+
+
+
+.imagenArtista{
+	width: 80%;
+}
+			
+.popularesFlex .artista{	
+	font-weight: 700;
+	font-size: 2rem;	
+}
+
+.popularesFlex .descripcion{	
+	font-weight: 100;
+	font-size: 1rem;
+
+}
+
+.artistasFlex{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1300px;
+	justify-self:center;
+	padding: 20px 0;
+	margin-top: 6rem;
+	margin-left: 4rem;
+}
+
+.itemArtista2{
+	width: 20%;
+	padding: 10px;
+	box-sizing: border-box;			
+	
+}
+
+
+
+.imagenTyler{
+    width: 50%;
+}
+
+.artic{
+    width: 70%;
+}
+.tyler{
+    width: 70%;
+}
+
+.jack{
+    width: 70%;
+}
+
+.posty{
+    width: 70%;
+}
+
+.harrysmall{
+    width: 73%;
+}
+
+.itemArtista2 div{
+	font-weight: 700;
+	font-size: 2rem;
+
+}
+
+
+@media all and (max-width: 768px){
+
+
+
+	#containerGridArtistas{
+		display: grid;
+		grid-template-rows: 90px 100px 1100px 850px 90px;
+		min-height: 100vh;
+	}
+
+	#headerFlex{
+		font-size: 16px;
+	    padding: 2rem 1rem;
+
+	}
+
+	.categorias li{
+    	margin-left: 1rem;
+	}
+
+	.imagenTyler{
+		width: 25%%;	
+		margin-left: 1rem;
+		margin-top: 4rem;
+	}
+
+
+	.title2{  
+	    font-weight: 700;
+	    font-size: 18px;
+	    line-height: 20px;
+	    margin-left: 2rem;
+	    margin-top: 4rem;	
+	    width: 200px;
+	}
+
+	.content{
+	    font-size:16px;
+		width: 200px;
+		margin-left: 2rem;
+		
+	}
+	.popularesFlex{
+		margin-top: 10rem;
+	}
+
+	.popularesFlex .itemArtista{
+		width: 100%;
+		box-sizing: border-box;
+		margin-left: 2rem;		
+
+			
+
+	}
+
+	.imagenArtista{
+		width: 70%;
+	}
+				
+	.popularesFlex .artista{	
+		font-weight: 700;
+		font-size: 1rem;	
+	}
+
+	.popularesFlex .descripcion{	
+		font-weight: 100;
+		font-size: 0,5rem;
+
+	}
+
+	.artistasFlex{
+		margin-right: 2rem;
+}
+
+	.itemArtista2 div{
+		font-weight: 700;
+		font-size: 18px;
+			
+		
+
+	}
+
+	.artistasFlex .itemArtista2{
+		width: 50%;
+	
+	}
+	
+}
